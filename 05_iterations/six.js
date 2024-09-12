@@ -23,5 +23,6 @@ const coading= ["js","ruby","java","c+++"]
 // })
 
 // console.log(newnums);
+console.log(newnums);
 
 
