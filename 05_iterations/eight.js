@@ -27,3 +27,4 @@ return acc+currval;
   return acc+item.price
  },0)
  console.log(ans);
+ console.log(ans);
