@@ -11,3 +11,4 @@
 //object
 
 console.log(typeof"aditya");
+console.log(typeof true);
