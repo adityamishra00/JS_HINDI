@@ -18,7 +18,7 @@ myArr.push(7);
 //console.log(myArr.includes(9)); op-false
 //console.log(myArr.indexOf(9)); op=-1
 
- //const newArr= myArr.join()  //- join isa use to combine its all element in string
+//  const newArr= myArr.join()  //- join isa use to combine its all element in string
 // console.log(myArr);
 // console.log(newArr);
 // console.log(typeof newArr);
