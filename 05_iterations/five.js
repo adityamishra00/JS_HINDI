@@ -19,7 +19,7 @@ function printme(item){
 coading.forEach(printme)//only give referance
 
 coading.forEach((item,index,arr)=>{
-  //console.log(item,index,arr);
+  // console.log(item,index,arr);
 })
 
 const mycoding=[
@@ -43,5 +43,9 @@ const mycoding=[
 ]
 
 mycoding.forEach((item)=>{
-  console.log(item.langauageFileName)
+  // console.log(item.langauageFileName)
+})
+
+coading.forEach((item, index, arr)=>{
+  console.log(item,index,arr);
 })
