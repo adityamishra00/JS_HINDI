@@ -6,8 +6,8 @@ const myObject={
 }
 
 for (const key in myObject) {
-  console.log(key);// this give key
-//  console.log(myObject[key]);//it give object
+  // console.log(key);// this give key
+  // console.log(myObject[key]);//it give object
 }
 
 const programmming=["js","rb","py","java"]
@@ -22,6 +22,6 @@ map.set('USA',"United States Of America")
 map.set('Fr',"France")
 
 
-for(const key in map){
-  //console.log(key);// this canmt give you the value because map is not iteratable
+for(const key of map){
+  console.log(key);// this canmt give you the value because map is not iteratable
 }
