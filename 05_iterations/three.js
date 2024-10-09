@@ -10,11 +10,11 @@ const arr=[1,2,3,4,5]
 // }
 
 
-// const greetings="Hello world"
-// for(const num of greetings){
+const greetings="Hello world"
+for(const num of greetings){
 // console.log(`Each char is ${num}`);
 
-// }
+}
 
 //Maps
 
@@ -26,13 +26,13 @@ map.set('Fr',"France")
 // console.log(map);
 
 for(const key of map){
-  //console.log(key);
+  // console.log(key);
 }
 // for loop to acces all value of map in array
 
 
 for(const [key,value] of map){
-  //console.log(key,':-',value);
+  // console.log(key,':-',value);
 }
 // for loop to acces value and key seperate
 
@@ -41,6 +41,6 @@ const myObject ={
   'game':'Spiderman'
 }
 
-// for(const [key,value] of myObject){
-//   console.log(key,':',value);
-// }// it is not iterable in this type of for loop
+for(const [key,value] of myObject){
+  console.log(key,':',value);
+}// it is not iterable in this type of for loop
