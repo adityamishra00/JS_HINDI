@@ -3,7 +3,7 @@
 ## project link
 [click here](https://stackblitz.com/edit/dom-project-chaiaurcode?file=index.html)
 
-## project 1
+## project  1 -ColorChanger
 
 ```javascript
 const buttons=document.querySelectorAll('.button')
@@ -27,4 +27,33 @@ if(e.target.id==='grey'){
 }
 })
 })
+```
+## project 2 - BmiCalculator
+
+```javascript
+const form = document.querySelector('form');
+form.addEventListener('submit',function(e){
+e.preventDefault();
+
+  const height=parseInt(document.getElementById('height').value)
+const weight=parseInt(document.getElementById('weight').value);
+const result=document.getElementById('results')
+if(height==='' || height<0 || isNaN(height)){
+  result.innerHTML=`please give a valid height ${height}`;
+}
+else if(weight===''||weight<0||isNaN(weight)){
+  result.innerHTML=`please give a valid weight ${weight}`;
+}else{
+const bmi=(weight/((height*height)/10000)).toFixed(2);
+if(bmi<18.6){
+  result.innerHTML=`Under Weight :<span>${bmi}</span>`
+}
+else if(bmi>=18.6 && bmi<=24.9){
+  result.innerHTML=`Normal Weight :<span>${bmi}</span>`
+}
+if(bmi>24.9){
+  result.innerHTML=`Over Weight :<span>${bmi}</span>`
+}
+}
+});
 ```
