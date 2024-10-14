@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Chai or Code</title>
+</head>
+<body  style="background-color: #212121; color: #fff;">
+  <ul class="language">
+<li>JavaScript</li>
+  </ul>
+</body>
+<script>
+  function addLanguage(langname){
+    const li=document.createElement('li')
+    li.innerHTML=`${langname}`
+    document.querySelector('.language').appendChild(li);
+  }
+  addLanguage('python')
+
+  function addOptimal(langname){
+const li=document.createElement('li')
+li.appendChild(document.createTextNode(langname))
+document.querySelector('.language').appendChild(li);
+  }
+  addOptimal('golang')
+
+//create ul
+//create li
+//add language
+function createUl(lang){
+  const ul=document.createElement('ul')
+  ul.className="Ulist"
+  const li=document.createElement('li')
+  li.appendChild(document.createTextNode(lang))
+  ul.appendChild(li)
+  document.body.appendChild(ul)
+}
+createUl('english')
+
+//edit
+
+const secondlang=document.querySelector("li:nth-child(2)")
+//secondlang.innerHTML="logo"
+
+const newli=document.createElement('li')
+newli.textContent="logo"
+secondlang.replaceWith(newli); 
+
+//edit 
+const firstlang=document.querySelector("li:first-child")
+firstlang.outerHTML='<li>TypeScript</li>'
+
+// remove
+const rem=document.querySelector("li:last-child")
+rem.remove()
+</script>
+</html>
