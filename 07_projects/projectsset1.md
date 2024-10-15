@@ -57,3 +57,17 @@ if(bmi>24.9){
 }
 });
 ```
+
+## project-3 -Digital clock
+
+```javascript
+const clock=document.querySelector('#clock')
+setInterval(function(){
+const date=new Date()
+// const hours=date.getHours()
+// const minutes=date.getMinutes()
+// const seconds=date.getSeconds()
+clock.innerHTML = date.toLocaleTimeString();
+
+},1000);
+```
