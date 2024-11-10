@@ -3,8 +3,8 @@ const score = 400
 const balance = new Number(100)
 //console.log(balance);
 
-//console.log(balance.toString().length);- op 3 because length of string
-//console.log(balance.toFixed(2)); 0p-100.00
+console.log(balance.toString().length);//- op 3 because length of string
+console.log(balance.toFixed(2));// 0p-100.00
 const otherNumber =123.8966
 
 //console.log(otherNumber.toPrecision(4));
@@ -13,16 +13,15 @@ const hundreds =10000000
 console.log(hundreds.toLocaleString('en-IN'));
 
 // ******** MATH ****************
-
-console.log(Math);
-console.log(Math.abs(-4))
+// console.log(Math);
+// console.log(Math.abs(-4))
 MAth.round(4.9)
 Math.ceil(4.2)
 Math.floor(4.9)
 Math.min(4,3,6,8);
 Math.max(4,3,6,8);
 
-// console.log(Math.random());
+//  console.log(Math.random());
 // console.log((Math.random()*10)+1);
 // console.log(Math.floor(Math.random()*10)+1);
 
