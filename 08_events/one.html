@@ -22,10 +22,10 @@
   // document.getElementById('owl').onclick=function(){
   //   alert("owl clicked")
   // }
-  document.getElementById('owl').addEventListener('click',function(e){
-    console.log("owl clicked")
-    e.stopPropagation();
-  },false)
+  // document.getElementById('owl').addEventListener('click',function(e){
+  //   console.log("owl clicked")
+  //   e.stopPropagation();
+  // },false)
   document.getElementById('images').addEventListener('click',function(e){
     console.log("images clicked")
   },false)
@@ -38,5 +38,14 @@
   },false)
   //type , timestamp ,defaultprevented
   //clientX , clientY ,ScreenX ,ScreenY
+
+  document.getElementById("images").addEventListener('click',function(e){
+     if(e.target.tagName=== 'IMG'){
+      const removee=e.target.parentNode
+      removee.remove();
+     }
+
+  },false)
+
 </script>
 </html>
