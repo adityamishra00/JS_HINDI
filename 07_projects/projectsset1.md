@@ -27,8 +27,9 @@ if(e.target.id==='grey'){
 }
 })
 })
-```
-## project 2 - BmiCalculator
+``` -->
+
+<!-- ## project 2 - BmiCalculator
 
 ```javascript
 const form = document.querySelector('form');
