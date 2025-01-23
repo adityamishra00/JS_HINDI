@@ -6,20 +6,44 @@
   <title>DOM</title>
 </head>
 <body>
-
-
+<ul class="list">
+  <li>java</li>
+</ul>
+</body>
   <script>
-const div=document.createElement("div");
-div.style.color='blue';
-div.style.fontSize = '32px';
-div.style.fontWeight = 'bold';
+// const div=document.createElement("div");
+// div.style.color='blue';
+// div.style.fontSize = '32px';
+// div.style.fontWeight = 'bold';
 
-// const h1=document.createElement("h1");
-const el=document.createTextNode('Hlo Aditya');
+// // const h1=document.createElement("h1");
+// const el=document.createTextNode('Hlo Aditya');
 
-div.appendChild(el);
-document.body.appendChild(div);
+// div.appendChild(el);
+// document.body.appendChild(div);
+
+function lang(lang){
+const li=document.createElement("li");
+li.innerHTML=`${lang}`
+document.querySelector(".list").appendChild(li);
+}
+lang('python')
+lang('english')
+
+// edit
+
+const sc=document.querySelector("li:nth-child(2)");
+const nw=document.createElement('li');
+nw.textContent='logo';
+sc.replaceWith(nw);
+
+const ans=document.querySelector("li:last-child");
+ans.remove();
+
+
+
+
+
 
   </script>
-</body>
 </html>
