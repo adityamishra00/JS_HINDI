@@ -171,3 +171,59 @@ function newGame() {
 
 
 ```
+
+## project 5 - key Board
+
+```javascript
+const insert=document.querySelector('#insert');
+
+window.addEventListener('keydown',(e) => {
+insert.innerHTML=`
+<div class='color'>
+<table>
+  <tr>
+    <th>Key</th>
+    <th>Keycode</th>
+    <th>Code</th>
+  </tr>
+  <tr>
+    <td>${e.key === " "?'space':  e.key}</td>
+    <td>${e.keyCode}</td>
+    <td>${e.code}</td>
+  </tr>
+ 
+</table>
+<div/> 
+`
+})
+```
+
+## project 6 - Unlimited color
+
+```javascript
+const start=document.querySelector("#start");
+const stop=document.querySelector("#stop");
+
+let intervelId=null;
+
+const getRandomColor = () => {
+  const randomColor = `#${Math.floor(Math.random() * 16777215).toString(16).padStart(6, '0')}`;
+  return randomColor;
+};
+const change=function(){
+document.querySelector('body').style.backgroundColor=getRandomColor();
+}
+
+start.addEventListener('click',function(){
+  if(!intervelId){
+intervelId=setInterval(change,1000);
+  }
+})
+
+stop.addEventListener('click',function(){
+  if(intervelId){
+    intervelId=clearInterval(intervelId);
+    intervelId=null;
+  }
+})
+```
